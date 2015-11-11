@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.breadbin.moviedb_trumps.views.VersusView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="@dimen/activity_horizontal_margin"
+  >
+
+  <LinearLayout
+    android:id="@+id/vgVersusProfiles"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="2"
+      android:orientation="vertical">
+
+      <ImageView
+        android:id="@+id/ivFirst"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/spacing_normal"
+        android:scaleType="centerCrop"
+        />
+
+      <TextView
+        android:id="@+id/tvFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/spacing_normal"
+        />
+
+    </LinearLayout>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:text="@string/versus"
+      android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+      />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="2"
+      android:orientation="vertical">
+
+      <ImageView
+        android:id="@+id/ivSecond"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/spacing_normal"
+        android:scaleType="centerCrop"
+        />
+
+      <TextView
+        android:id="@+id/tvSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/spacing_normal"
+        />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/vgScores"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/vgVersusProfiles"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/tvFirstScore"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center_horizontal"
+      android:padding="@dimen/spacing_normal"
+      android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+      android:visibility="gone"
+      />
+
+    <TextView
+      android:id="@+id/tvSecondScore"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_weight="1"
+      android:gravity="center_horizontal"
+      android:padding="@dimen/spacing_normal"
+      android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+      android:visibility="gone"
+      />
+
+  </LinearLayout>
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/rvGenres"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/vgScores"
+    />
+
+</com.breadbin.moviedb_trumps.views.VersusView>
